@@ -106,8 +106,8 @@ if model is not None:
 
             cursor = connection.cursor()
 
-            insert_query = """INSERT INTO iris_log (sepal_length, sepal_width, petal_length, petal_width, predicted_species, confidence)
-            VALUES (%s, %s, %s, %s, %s, %s)"""
+            insert_query = """INSERT INTO iris_log (sepal_length, sepal_width, petal_length, petal_width, predicted_species)
+            VALUES (%s, %s, %s, %s, %s)"""
 
             cursor.execute(insert_query,(
                 int(sepal_length),
