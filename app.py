@@ -121,6 +121,6 @@ if model is not None:
             cursor.close()
             connection.close()
 
-            st.succes("✅ Datos guardados correctamente.")
+            st.success("✅ Datos guardados correctamente.")
         except Exception as e:
             st.error(f"❌ Error al guardar datos: {str(e)}")
