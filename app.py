@@ -96,8 +96,7 @@ if model is not None:
 
         # Guardar en la base de datos
         try:
-            connection = psycopg2.connect
-            (
+            connection = psycopg2.connect(
                 user=USER,
                 password=PASSWORD,
                 host=HOST,
