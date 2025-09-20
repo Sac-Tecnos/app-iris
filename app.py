@@ -106,7 +106,7 @@ if model is not None:
 
             cursor = connection.cursor()
 
-            insert_query = """INSERT INTO table_iris (is, "as", ip, ap, prediction) VALUES (%s, %s, %s, %s, %s)"""
+            insert_query = """INSERT INTO table_iris ("is", "as", ip, ap, prediction) VALUES (%s, %s, %s, %s, %s)"""
 
             cursor.execute(insert_query,(
                 int(sepal_length),
